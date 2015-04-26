@@ -1,7 +1,9 @@
 ## A function that create a tidy dataset
 ## from raw data
 
+library(plyr)
 library(dplyr)
+library(reshape2)
 
 #################################################################
 ######################### STEP 1 ################################
