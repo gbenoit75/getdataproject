@@ -31,6 +31,7 @@ The data set used provides measures for 6 types of activities:
 - sitting
 - standing
 - laying
+
 The measures have been carried out for 30 subjects numbered from 1
 to 30.
 Values for 561 variables are given. These variables are described in the file "features_info.txt" of the original data set. The physical measures are triaxial (X, Y, Z) acceleration and triaxial angular velocity. Among the 561 variables, many are derived from the physical measures.
@@ -41,21 +42,26 @@ The dimension and the type of the variables are given between parentheses. For e
 
 # STEP 1: Downloading and merging data
 -1) Download the data to a local directory: The file is called "data.zip"
+
 -2) Unzip the data
+
 -3) Load the relevant data for the training set:
         - 'subj_test' ((2947,1), integer): The list of subjects of test set
         - 'x_test' ((2947,561), numeric): The measures of the 561 variables of the test set
         - 'y_test' ((2947,1), integer): The activities performed in the test set
+
 -4) Load the relevant data for the training set:
         - 'subj_train' ((7352,1), integer): The list of subjects of test set
         - 'x_train' ((7352,561), numeric): The measures of the 561 variables of the test set
         - 'y_train' ((7352,1), integer): The activities performed in the test set
+
 -5) Merge in a first data frame called 'df1' all the test data as ('x_test', 'y_test', 'subj_test'). 'df1' dimension is: (2947,563)
+
 -6) Merge in a second data frame called 'df2' all the training data as ('x_train', 'y_train', 'subj_train'). 'df2' dimension is: (7352,563)
--7) Merge 'df1' and 'df2' with 'df1' as the upper part of the new data frame and 'df2' the lower part of the new data frame (using rbind).
-The new data frame called 'dset' has a dimension of (10299,563) with:
-        - The first 561 variables of type numeric
-        - The 562th and 563th variables of type integer
+
+-7) Merge 'df1' and 'df2' with 'df1' as the upper part of the new data frame and 'df2' the lower part of the new data frame (using rbind). The new data frame called 'dset' has a dimension of (10299,563) with:
+- The first 561 variables of type numeric
+- The 562th and 563th variables of type integer
 
 # STEP 2: Extracts only measurements on the mean and the standard deviation (std)
 -1) Load the features (name of variables): 'features' ((561,2), (integer, factor))
