@@ -78,7 +78,7 @@ The dimension and the type of the variables are given between parentheses. For e
 - We add the vector 'index' to 'dset'. 'index' is now the first row of 'dset'
 - We remove all columns of 'dset' for which 'index' is equal to "FALSE" and create a new data frame called 'dset2'
 - We remove the first row of 'dset2'. 'dset2' dimension is now (10299,68) with:
-- The first 66 variables of type numeric
+-- The first 66 variables of type numeric
 - The 67th and 68th variables of type integer
 
 # STEP 3: Label activities
@@ -129,73 +129,73 @@ Apply some usual rules on variables name: only lower letters, no underscores or 
 
 The variables' name are given below:
 - "activity": activity of the subject
--"subject": subject identification
--"tbodyaccmeanx": time body acceleration mean on axis x
--"tbodyaccmeany": time body acceleration mean on axis y
--"tbodyaccmeanz": time body acceleration mean on axis z
--"tbodyaccstdx": time body acceleration standard deviation on axis x
--"tbodyaccstdy": time body acceleration standard deviation on axis y
--"tbodyaccstdz": time body acceleration standard deviation on axis z
--"tgravityaccmeanx": time gravity acceleration mean on axis x
--"tgravityaccmeany": time gravity acceleration mean on axis y
--"tgravityaccmeanz": time gravity acceleration mean on axis z
--"tgravityaccstdx": time gravity acceleration standard deviation on axis x
--"tgravityaccstdy": time gravity acceleration standard deviation on axis y
--"tgravityaccstdz": time gravity acceleration standard deviation on axis z
--"tbodyaccjerkmeanx"
--"tbodyaccjerkmeany"
--"tbodyaccjerkmeanz"
--"tbodyaccjerkstdx"
--"tbodyaccjerkstdy"
--"tbodyaccjerkstdz"
--"tbodygyromeanx"
--"tbodygyromeany"
--"tbodygyromeanz"
--"tbodygyrostdx"
--"tbodygyrostdy"
--"tbodygyrostdz"
--"tbodygyrojerkmeanx"
--"tbodygyrojerkmeany"
--"tbodygyrojerkmeanz"
--"tbodygyrojerkstdx"
--"tbodygyrojerkstdy"
--"tbodygyrojerkstdz"
--"tbodyaccmagmean"
--"tbodyaccmagstd"
--"tgravityaccmagmean"
--"tgravityaccmagstd"
--"tbodyaccjerkmagmean"
--"tbodyaccjerkmagstd"
--"tbodygyromagmean"
--"tbodygyromagstd"
--"tbodygyrojerkmagmean"
--"tbodygyrojerkmagstd"
--"fbodyaccmeanx"
--"fbodyaccmeany"
--"fbodyaccmeanz"
--"fbodyaccstdx"
--"fbodyaccstdy"
--"fbodyaccstdz"
--"fbodyaccjerkmeanx"
--"fbodyaccjerkmeany"
--"fbodyaccjerkmeanz"
--"fbodyaccjerkstdx"
--"fbodyaccjerkstdy"
--"fbodyaccjerkstdz"
--"fbodygyromeanx"
--"fbodygyromeany"
--"fbodygyromeanz"
--"fbodygyrostdx"
--"fbodygyrostdy"
--"fbodygyrostdz"
--"fbodyaccmagmean"
--"fbodyaccmagstd"
--"fbodyaccjerkmagmean"
--"fbodyaccjerkmagstd"
--"fbodygyromagmean"
--"fbodygyromagstd"
--"fbodygyrojerkmagmean"
--"fbodygyrojerkmagstd"
+- "subject": subject identification
+- "tbodyaccmeanx": time body acceleration mean on axis x
+- "tbodyaccmeany": time body acceleration mean on axis y
+- "tbodyaccmeanz": time body acceleration mean on axis z
+- "tbodyaccstdx": time body acceleration standard deviation on axis x
+- "tbodyaccstdy": time body acceleration standard deviation on axis y
+- "tbodyaccstdz": time body acceleration standard deviation on axis z
+- "tgravityaccmeanx": time gravity acceleration mean on axis x
+- "tgravityaccmeany": time gravity acceleration mean on axis y
+- "tgravityaccmeanz": time gravity acceleration mean on axis z
+- "tgravityaccstdx": time gravity acceleration standard deviation on axis x
+- "tgravityaccstdy": time gravity acceleration standard deviation on axis y
+- "tgravityaccstdz": time gravity acceleration standard deviation on axis z
+- "tbodyaccjerkmeanx"
+- "tbodyaccjerkmeany"
+- "tbodyaccjerkmeanz"
+- "tbodyaccjerkstdx"
+- "tbodyaccjerkstdy"
+- "tbodyaccjerkstdz"
+- "tbodygyromeanx"
+- "tbodygyromeany"
+- "tbodygyromeanz"
+- "tbodygyrostdx"
+- "tbodygyrostdy"
+- "tbodygyrostdz"
+- "tbodygyrojerkmeanx"
+- "tbodygyrojerkmeany"
+- "tbodygyrojerkmeanz"
+- "tbodygyrojerkstdx"
+- "tbodygyrojerkstdy"
+- "tbodygyrojerkstdz"
+- "tbodyaccmagmean"
+- "tbodyaccmagstd"
+- "tgravityaccmagmean"
+- "tgravityaccmagstd"
+- "tbodyaccjerkmagmean"
+- "tbodyaccjerkmagstd"
+- "tbodygyromagmean"
+- "tbodygyromagstd"
+- "tbodygyrojerkmagmean"
+- "tbodygyrojerkmagstd"
+- "fbodyaccmeanx"
+- "fbodyaccmeany"
+- "fbodyaccmeanz"
+- "fbodyaccstdx"
+- "fbodyaccstdy"
+- "fbodyaccstdz"
+- "fbodyaccjerkmeanx"
+- "fbodyaccjerkmeany"
+- "fbodyaccjerkmeanz"
+- "fbodyaccjerkstdx"
+- "fbodyaccjerkstdy"
+- "fbodyaccjerkstdz"
+- "fbodygyromeanx"
+- "fbodygyromeany"
+- "fbodygyromeanz"
+- "fbodygyrostdx"
+- "fbodygyrostdy"
+- "fbodygyrostdz"
+- "fbodyaccmagmean"
+- "fbodyaccmagstd"
+- "fbodyaccjerkmagmean"
+- "fbodyaccjerkmagstd"
+- "fbodygyromagmean"
+- "fbodygyromagstd"
+- "fbodygyrojerkmagmean"
+- "fbodygyrojerkmagstd"
 
 5) We save locally 'tidydata' to a text file named "tidyData.txt".
 
