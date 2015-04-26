@@ -78,8 +78,8 @@ The dimension and the type of the variables are given between parentheses. For e
 - We add the vector 'index' to 'dset'. 'index' is now the first row of 'dset'
 - We remove all columns of 'dset' for which 'index' is equal to "FALSE" and create a new data frame called 'dset2'
 - We remove the first row of 'dset2'. 'dset2' dimension is now (10299,68) with:
--- The first 66 variables of type numeric
-- The 67th and 68th variables of type integer
+ - The first 66 variables of type numeric
+ - The 67th and 68th variables of type integer
 
 # STEP 3: Label activities
 Simply rename the activities. We replace the integers (between 1 and 6) by a chain of characters:
