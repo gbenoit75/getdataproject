@@ -116,18 +116,19 @@ Apply some usual rules on variables name: only lower letters, no underscores or 
 - "activity"
 - "variable": it contains the former 66 first variables' names
 - "value": the corresponding value for each combination
+
 'mdata' dimension is ((679734,4), (integer, character, factor, numeric)). 679734 is equal to 10299 rows of 'dset2' * 66 first columns of 'dset2'.
 
 2) We order (ascending) 'mdata' by "subject". So subject n°1 is first and subject n°30 is last.
 
 3) We compute the mean of the different measurements for each activity and each subject. The results are saved in 'tidydata'. 'tidydata' dimension is ((11880,4), (integer, character, factor, numeric))
 
-4) We cast this long table to a wider table. 'tidydata' is now (180,68) with:
+4) We cast this long data frame to a wider data frame. 'tidydata' is now (180,68) with:
 - The first column containing the subject
 - The second column containing the activity
 - The last 66 columns containing the mean on the measurements for each combination of subject and activity.
 
-The variables' name are given below:
+The variables' names are given below:
 - "activity": activity of the subject
 - "subject": subject identification
 - "tbodyaccmeanx": time body acceleration mean on axis x
@@ -142,60 +143,60 @@ The variables' name are given below:
 - "tgravityaccstdx": time gravity acceleration standard deviation on axis x
 - "tgravityaccstdy": time gravity acceleration standard deviation on axis y
 - "tgravityaccstdz": time gravity acceleration standard deviation on axis z
-- "tbodyaccjerkmeanx"
-- "tbodyaccjerkmeany"
-- "tbodyaccjerkmeanz"
-- "tbodyaccjerkstdx"
-- "tbodyaccjerkstdy"
-- "tbodyaccjerkstdz"
-- "tbodygyromeanx"
-- "tbodygyromeany"
-- "tbodygyromeanz"
-- "tbodygyrostdx"
-- "tbodygyrostdy"
-- "tbodygyrostdz"
-- "tbodygyrojerkmeanx"
-- "tbodygyrojerkmeany"
-- "tbodygyrojerkmeanz"
-- "tbodygyrojerkstdx"
-- "tbodygyrojerkstdy"
-- "tbodygyrojerkstdz"
-- "tbodyaccmagmean"
-- "tbodyaccmagstd"
-- "tgravityaccmagmean"
-- "tgravityaccmagstd"
-- "tbodyaccjerkmagmean"
-- "tbodyaccjerkmagstd"
-- "tbodygyromagmean"
-- "tbodygyromagstd"
-- "tbodygyrojerkmagmean"
-- "tbodygyrojerkmagstd"
-- "fbodyaccmeanx"
-- "fbodyaccmeany"
-- "fbodyaccmeanz"
-- "fbodyaccstdx"
-- "fbodyaccstdy"
-- "fbodyaccstdz"
-- "fbodyaccjerkmeanx"
-- "fbodyaccjerkmeany"
-- "fbodyaccjerkmeanz"
-- "fbodyaccjerkstdx"
-- "fbodyaccjerkstdy"
-- "fbodyaccjerkstdz"
-- "fbodygyromeanx"
-- "fbodygyromeany"
-- "fbodygyromeanz"
-- "fbodygyrostdx"
-- "fbodygyrostdy"
-- "fbodygyrostdz"
-- "fbodyaccmagmean"
-- "fbodyaccmagstd"
-- "fbodyaccjerkmagmean"
-- "fbodyaccjerkmagstd"
-- "fbodygyromagmean"
-- "fbodygyromagstd"
-- "fbodygyrojerkmagmean"
-- "fbodygyrojerkmagstd"
+- "tbodyaccjerkmeanx": time body acceleration jerk mean on axis x
+- "tbodyaccjerkmeany": time body acceleration jerk mean on axis y
+- "tbodyaccjerkmeanz": time body acceleration jerk mean on axis z
+- "tbodyaccjerkstdx": time body acceleration jerk standard deviation on axis x
+- "tbodyaccjerkstdy": time body acceleration jerk standard deviation on axis y
+- "tbodyaccjerkstdz": time body acceleration jerk standard deviation on axis z
+- "tbodygyromeanx": time body angular velocity mean on axis x
+- "tbodygyromeany": time body angular velocity mean on axis y
+- "tbodygyromeanz": time body angular velocity mean on axis z
+- "tbodygyrostdx": time body angular velocity standard deviation on axis x
+- "tbodygyrostdy": time body angular velocity standard deviation on axis y
+- "tbodygyrostdz": time body angular velocity standard deviation on axis z
+- "tbodygyrojerkmeanx": time body angular velocity jerk mean on axis x
+- "tbodygyrojerkmeany": time body angular velocity jerk mean on axis y
+- "tbodygyrojerkmeanz": time body angular velocity jerk mean on axis z
+- "tbodygyrojerkstdx": time body angular velocity jerk standard deviation on axis x
+- "tbodygyrojerkstdy": time body angular velocity jerk standard deviation on axis y
+- "tbodygyrojerkstdz": time body angular velocity jerk standard deviation on axis z
+- "tbodyaccmagmean": time body acceleration magnitude mean 
+- "tbodyaccmagstd": time body acceleration magnitude standard deviation
+- "tgravityaccmagmean": time body gravity acceleration magnitude mean
+- "tgravityaccmagstd": time body acceleration magnitude standard deviation
+- "tbodyaccjerkmagmean": time body acceleration jerk magnitude mean
+- "tbodyaccjerkmagstd": time body acceleration magnitude standard deviation
+- "tbodygyromagmean": time body angular velocity magnitude mean
+- "tbodygyromagstd": time body angular velocity magnitude standard deviation
+- "tbodygyrojerkmagmean": time body angular velocity jerk magnitude mean
+- "tbodygyrojerkmagstd": time body angular velocity jerk magnitude standard deviation
+- "fbodyaccmeanx": frequency body acceleration mean on axis x
+- "fbodyaccmeany": frequency body acceleration mean on axis y
+- "fbodyaccmeanz": frequency body acceleration mean on axis z
+- "fbodyaccstdx": frequency body acceleration standard deviation on axis x
+- "fbodyaccstdy": frequency body acceleration standard deviation on axis y
+- "fbodyaccstdz": frequency body acceleration standard deviation on axis z
+- "fbodyaccjerkmeanx": frequency body acceleration jerk mean on axis x
+- "fbodyaccjerkmeany": frequency body acceleration jerk mean on axis y
+- "fbodyaccjerkmeanz": frequency body acceleration jerk mean on axis z
+- "fbodyaccjerkstdx": frequency body acceleration jerk standard deviation on axis x
+- "fbodyaccjerkstdy": frequency body acceleration jerk standard deviation on axis y
+- "fbodyaccjerkstdz": frequency body acceleration jerk standard deviation on axis z
+- "fbodygyromeanx": frequency body angular velocity mean on axis x
+- "fbodygyromeany": frequency body angular velocity mean on axis y
+- "fbodygyromeanz": frequency body angular velocity mean on axis z
+- "fbodygyrostdx": frequency body angular velocity standard deviation on axis x
+- "fbodygyrostdy": frequency body angular velocity standard deviation on axis y
+- "fbodygyrostdz": frequency body angular velocity standard deviation on axis z
+- "fbodyaccmagmean": frequency body acceleration magnitude mean
+- "fbodyaccmagstd": frequency body acceleration magnitude standard deviation
+- "fbodyaccjerkmagmean": frequency body acceleration jerk magnitude mean
+- "fbodyaccjerkmagstd": frequency body acceleration magnitude standard deviation
+- "fbodygyromagmean": frequency body angular velocity magnitude mean
+- "fbodygyromagstd": frequency body angular velocity magnitude standard deviation
+- "fbodygyrojerkmagmean": frequency body angular velocity jerk magnitude mean
+- "fbodygyrojerkmagstd": frequency body angular velocity jerk magnitude standard deviation
 
 5) We save locally 'tidydata' to a text file named "tidyData.txt".
 
